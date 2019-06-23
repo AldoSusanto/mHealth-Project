@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mhealth.application.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to mHealth!"
+            android:layout_marginTop="25dp"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/welcome"/>
+
+        <TextView
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:text="Subjects: if the app fails to connect to Drive, hit 'Connect'. Once the app connects, proceed with syncing via the mHealth Garmin app."
+            android:textSize="25sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:layout_below="@+id/welcome"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/infoText"
+             />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Last synced at: "
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/lastSyncLabel"
+            android:layout_below="@id/infoText"
+            />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/lastSyncDay"
+            android:layout_below="@id/lastSyncLabel"
+            />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/lastSyncDay"
+            android:id="@+id/connect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:textSize="20sp"
+            android:text="Connect"
+            android:onClick="connect"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:background="@color/maroon"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/connect">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Admin login"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:textColor="@color/lightText"
+                android:id="@+id/loginTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="password"
+                android:id="@+id/password"
+                android:textColor="@color/lightText"
+                android:textColorHint="@color/grey"
+                android:backgroundTint="@color/lightText"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/loginTitle"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:text="Login"
+                android:textSize="20sp"
+                android:id="@+id/loginButton"
+                android:layout_below="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:onClick="login" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

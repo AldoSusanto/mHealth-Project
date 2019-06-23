@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/maroon</item>
+        <item name="colorPrimaryDark">@color/darkText</item>
+        <item name="colorAccent">@color/maroon</item>
+        <item name="android:colorBackground">@color/grey</item>
+        <item name="android:textColorPrimary">@color/darkText</item>
+        <item name="android:textColorPrimaryInverse">@color/lightText</item>
+        <item name="android:windowBackground">@color/grey</item>
+    </style></resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mhealth.application.AdminActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/maroon">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="Logout"
+                android:textColor="@color/lightText"
+                android:onClick="logout"
+                android:background="@color/maroon"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:text="Change Password"
+            android:layout_marginTop="80dp"
+            android:id="@+id/changePasswordButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="changePass"
+            />
+        
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/driveButton"
+            android:text="Connect to Drive"
+            android:layout_below="@id/changePasswordButton"
+            android:onClick="authorize"/>
+        <Button
+            android:id="@+id/newStudyButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/driveButton"
+            android:text="Create new Study"
+            android:layout_centerHorizontal="true"
+            android:onClick="createBatchFolder"/>
+
+
+
+        <Button
+            android:id="@+id/setupButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/newStudyButton"
+            android:layout_centerHorizontal="true"
+            android:onClick="setup"
+            android:text="Register a watch" />
+
+        <LinearLayout
+            android:id="@+id/setupLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/setupButton"
+            android:layout_marginTop="25dp"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:background="@color/maroon"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+
+            <TextView
+                android:id="@+id/userIDtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Please enter the subject ID to register to the watch:"
+                android:textColor="@color/lightText"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/userIDinput"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@color/maroonlight"
+                android:inputType="number"
+                android:textColor="@color/lightText" />
+
+            <TextView
+                android:id="@+id/StartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center_horizontal"
+                android:text="When is the start date of the study? "
+                android:textColor="@color/lightText"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonDate"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp"
+                android:textSize="20sp"
+                android:text="Pick the date"
+                android:onClick="showCalendar"/>
+
+            <Button
+                android:layout_width="300dp"
+                android:id="@+id/regWatch"
+                android:onClick="registerWatch"
+                android:layout_height="60dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="20sp"
+                android:text="Submit"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+

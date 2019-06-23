@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey">#aaaaaa</color>
+    <color name="darkText">#222222</color>
+    <color name="lightText">#eeeeee</color>
+    <color name="maroon">#500000</color>
+    <color name="maroonlight">#800000</color>
+    <color name="Blue">#0000ee</color>
+    <color name="Hyperlink">#0000ee</color>
+</resources>
